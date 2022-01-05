@@ -14,5 +14,13 @@
     <ClCompile Include="..\..\source\main.c">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\ArrayControler.c">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\ArrayControler.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
