@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include<stdlib.h>
+
 void show(int data[4][4]) {
 	printf("\n\t2048");
 	for (int i = 0; i < 4; i++) {

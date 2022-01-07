@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"ArrayControler.h"
+#include"show.h"
 #define SIZE 4
 
 int data[SIZE][SIZE];
