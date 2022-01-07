@@ -21,9 +21,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\source\ArrayControler.c" />
     <ClCompile Include="..\..\source\main.c" />
+    <ClCompile Include="..\..\source\show.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\ArrayControler.h" />
+    <ClInclude Include="..\..\include\show.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
