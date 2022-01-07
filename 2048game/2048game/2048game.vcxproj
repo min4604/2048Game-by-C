@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\source\annex.c" />
     <ClCompile Include="..\..\source\ArrayControler.c" />
     <ClCompile Include="..\..\source\main.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\annex.h" />
     <ClInclude Include="..\..\include\ArrayControler.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -86,7 +88,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\c_code\FinalProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.17763.0\ucrt;C:\c_code\FinalProject\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
