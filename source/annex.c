@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include"ArrayControler.h"
 
 void squeeze(int data[4])
 {
@@ -58,4 +59,21 @@ void annex_down(int data[4][4])
 	Rotation_matrix(data, 1);
 	annex_left(data);
 	Rotation_matrix(data, 3);
+}
+
+void Rotation_matrix(int data[4][4], int count)
+{
+	int temp[4][4];
+	copyArray(temp, data);
+	for (int a = 0; a < 4; a++)
+	{
+		for (int b = 0; b < 4; b++)
+		{
+			data[a][b] = temp[3 - b][a];
+		}
+	}
+	if (count>1)
+	{
+		Rotation_matrix(data, count - 1);
+	}
 }

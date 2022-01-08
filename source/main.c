@@ -24,8 +24,7 @@ int main(void)
 				break;
 			case 77: //¥kÁä
 				break;
-			case 80: //¤UÁä
-				
+			case 80: //¤UÁä				
 				break;
 			case 75: //¥ªÁä
 				annex_left(data);
