@@ -21,11 +21,16 @@ int main(void)
 		switch (move)
 		{
 			case 72: //¤WÁä
+				annex_up(data);
+				newNum(data, 2);
 				break;
 			case 77: //¥kÁä
+				annex_right(data);
+				newNum(data, 2);
 				break;
 			case 80: //¤UÁä
-				
+				annex_down(data);
+				newNum(data, 2);
 				break;
 			case 75: //¥ªÁä
 				annex_left(data);
