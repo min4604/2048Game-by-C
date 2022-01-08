@@ -5,7 +5,6 @@ void squeeze(int data[4])
 {
 	int i = 0;
 	int j = 0;
-	int data[4];
 	for (i = 0; i < 4; i++)
 	{
 		if (data[i] != 0)
