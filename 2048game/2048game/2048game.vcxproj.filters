@@ -17,7 +17,11 @@
     <ClCompile Include="..\..\source\ArrayControler.c">
       <Filter>source</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="..\..\source\show.c">
+=======
+    <ClCompile Include="..\..\source\annex.c">
+>>>>>>> olympus
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
@@ -25,7 +29,11 @@
     <ClInclude Include="..\..\include\ArrayControler.h">
       <Filter>include</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="..\..\include\show.h">
+=======
+    <ClInclude Include="..\..\include\annex.h">
+>>>>>>> olympus
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
