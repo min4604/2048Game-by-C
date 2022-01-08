@@ -5,11 +5,14 @@
 void randArray(int a[], int n)
 {
 	int i;
+	srand(time(0));
 	for (i = 0; i < n; i++)
 	{
-		srand(time(0));
+		
+		
 		a[i] = rand() % 4;
 	}
+	
 }
 
 void init(int data[4][4], int inintNum)
@@ -22,8 +25,8 @@ void init(int data[4][4], int inintNum)
 	}
 	else
 	{
-		data[random[0]][random[2]] == inintNum;
-		data[random[1]][random[3]] == inintNum;
+		data[random[0]][random[1]] = inintNum;
+		data[random[2]][random[3]] = inintNum;
 	}
 }
 
