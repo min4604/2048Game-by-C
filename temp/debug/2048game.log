@@ -1,6 +1,7 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Intermediate 目錄。
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
   annex.c
+<<<<<<< HEAD
 c:\c_code\finalproject\source\annex.c(44): warning C4013: 'Rotation_matrix' 未定義; 假設 extern 傳回整數
   ArrayControler.c
   main.c
@@ -8,3 +9,7 @@ c:\c_code\finalproject\source\annex.c(44): warning C4013: 'Rotation_matrix' 未�
   正在產生程式碼...
 annex.obj : error LNK2019: 無法解析的外部符號 _Rotation_matrix 在函式 _annex_down 中被參考
 ..\..\temp\debug\2048game.exe : fatal error LNK1120: 1 個無法解析的外部符號
+=======
+c:\c_code\finalproject\source\annex.c(45): warning C4013: 'Rotation_matrix' 未定義; 假設 extern 傳回整數
+c:\c_code\finalproject\source\annex.c(64): error C2371: 'Rotation_matrix': 重複定義; 基本類型不相同
+>>>>>>> olympus
