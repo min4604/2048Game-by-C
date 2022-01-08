@@ -1,17 +1,26 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-
+int last[2] = { 0 }, chackflag = 0;
 void randArray(int a[], int n)
 {
-	int i;
-	srand((unsigned)time(0));
+	int i,j;
+	srand((unsigned)time(NULL));
+	j = rand()%100;
+	srand((unsigned)time(NULL) + j);
 	for (i = 0; i < n; i++)
 	{
-		
-		
 		a[i] = rand() % 4;
+		if (i % 2 == 0&&a[i-1]==last[0]&&a[i]==last[1])
+		{
+			j = rand() % 100;
+			srand((unsigned)time(NULL) + j);
+			i = 0;
+		}
+		
 	}
+	last[0] = a[n - 1];
+	last[1] = a[n];
 	
 }
 

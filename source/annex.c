@@ -40,6 +40,25 @@ void annex_left(int data[4][4])
 	}
 }
 
+void Rotation_matrix(int data[4][4], int count)
+{
+	int save[4][4];
+	int i, j;
+	copyArray(save, data);
+	for (i = 0; i < 4; i++)
+	{
+		for (j = 0; j < 4; j++)
+		{
+			data[i][j] = save[3 - j][i];
+		}
+	}
+	if (count > 1)
+	{
+		Rotation_matrix(data, count - 1);
+	}
+
+}
+
 void annex_right(int data[4][4])
 {
 	Rotation_matrix(data, 2);
@@ -61,19 +80,4 @@ void annex_down(int data[4][4])
 	Rotation_matrix(data, 3);
 }
 
-void Rotation_matrix(int data[4][4], int count)
-{
-	int temp[4][4];
-	copyArray(temp, data);
-	for (int a = 0; a < 4; a++)
-	{
-		for (int b = 0; b < 4; b++)
-		{
-			data[a][b] = temp[3 - b][a];
-		}
-	}
-	if (count>1)
-	{
-		Rotation_matrix(data, count - 1);
-	}
-}
+
