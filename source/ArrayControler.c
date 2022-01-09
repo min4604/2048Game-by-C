@@ -53,19 +53,26 @@ void copyArray(int data[4][4], int src[4][4])
 
 void newNum(int data[4][4], int newber)
 {
-	int newxy[2], i, j, flag =1;
+	int newxy[10], i, j, flag =1;
 	do
 	{
 		flag = 1;
-		randArray(newxy, 2);
+		randArray(newxy, 10);
 		for (i = 0; i < 4; i++)
 		{
 			for (j = 0; j < 4; j++)
 			{
-				if (data[i][j] == 0 && i == newxy[0] && j == newxy[1])
+				if (data[i][j] == 0 )
 				{
-					data[newxy[0]][newxy[1]] = newber;
-					return;
+					for (int k = 0; k < 9; k++)
+					{
+						if (i == newxy[k] && j == newxy[k + 1])
+						{
+							data[newxy[k]][newxy[k+1]] = newber;
+							return;
+						}
+					}
+
 				}
 			}
 		}
