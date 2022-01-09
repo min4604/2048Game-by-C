@@ -11,9 +11,18 @@ int olddata[SIZE][SIZE];
 int main(void)
 {
 	char move; //移動方向輸入
-	printf("新遊戲\n");
-	//move = getch();
-	init(data,2);
+	printf("1、新遊戲\n");
+	printf("2、繼續游戲\n");
+	move = _getch();
+	if (move == '1')
+	{
+		init(data, 2);
+	}
+	else
+	{
+		readFile(data);
+	}
+	
 	while (1)
 	{
 		show(data);
@@ -54,6 +63,8 @@ int main(void)
 				}
 				break;
 			case 27: //esc
+				saveFile(data);
+				return 0;
 				break;
 
 		}

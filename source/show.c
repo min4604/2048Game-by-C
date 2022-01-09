@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include"ArrayControler.h"
 void show(int data[4][4]) {
 	printf("\n\t2048");
 	for (int i = 0; i < 4; i++) {
@@ -18,7 +18,8 @@ void show(int data[4][4]) {
 }
 
 void saveFile(int data[4][4]) {
-	FILE* f = fopen("2048.dat", "w");
+	FILE* f;
+	fopen_s(&f,"2048.dll", "w");
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
 			fprintf(f, "%d ", data[i][j]);
@@ -29,17 +30,18 @@ void saveFile(int data[4][4]) {
 }
 
 void readFile(int data[4][4]) {
-	FILE* f = fopen("2048.dat", "r");
-	if (f == NULL) {
+	FILE*fptr;
+	fopen_s( &fptr,"2048.dll", "r");
+	if (fptr == NULL) {
 		printf("\n無遊戲存檔，開始新遊戲\n");
 		init(data, 2);
 		return;
 	}
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
-			fscanf(f, "%d ", &data[i][j]);
+			fscanf_s(fptr, "%d ", &data[i][j]);
 		}
-		fscanf(f, "\n");
+		fscanf_s(fptr, "\n");
 	}
-	fclose(f);
+	fclose(fptr);
 }
