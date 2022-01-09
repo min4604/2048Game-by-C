@@ -7,7 +7,7 @@
 #define SIZE 4
 
 int data[SIZE][SIZE];
-
+int olddata[SIZE][SIZE];
 int main(void)
 {
 	char move; //移動方向輸入
@@ -21,20 +21,37 @@ int main(void)
 		switch (move)
 		{
 			case 72: //上鍵
+				copyArray(olddata, data);
 				annex_up(data);
-				newNum(data, 2);
+				if (chackdata(olddata, data) == 1)
+				{
+					newNum(data, 2);
+				}
+				
 				break;
 			case 77: //右鍵
+				copyArray(olddata, data);
 				annex_right(data);
-				newNum(data, 2);
+				if (chackdata(olddata, data) == 1)
+				{
+					newNum(data, 2);
+				}
 				break;
 			case 80: //下鍵
+				copyArray(olddata, data);
 				annex_down(data);
-				newNum(data, 2);
+				if (chackdata(olddata, data) == 1)
+				{
+					newNum(data, 2);
+				}
 				break;
 			case 75: //左鍵
+				copyArray(olddata, data);
 				annex_left(data);
-				newNum(data, 2);
+				if (chackdata(olddata, data) == 1)
+				{
+					newNum(data, 2);
+				}
 				break;
 			case 27: //esc
 				break;

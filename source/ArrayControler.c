@@ -73,3 +73,20 @@ void newNum(int data[4][4], int newber)
 	} while (flag == 1);
 	
 }
+
+int  chackdata(int olddata[4][4], int data[4][4])
+{
+	int i, j;
+	int flag = 0;
+	for (i = 0; i < 4; i++)
+	{
+		for (j = 0; j < 4; j++)
+		{
+			if (olddata[i][j] != data[i][j])
+			{
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
