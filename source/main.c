@@ -11,6 +11,7 @@ int olddata[SIZE][SIZE];
 int main(void)
 {
 	char move; //移動方向輸入
+	printf("遊戲操作方式:\n運用上下左右來移動介面\nesc鍵存檔\n\n");
 	printf("1、新遊戲\n");
 	printf("2、繼續游戲\n");
 	move = _getch();

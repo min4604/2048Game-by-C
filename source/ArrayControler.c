@@ -57,14 +57,14 @@ void newNum(int data[4][4], int newber)
 	do
 	{
 		flag = 1;
-		randArray(newxy, 10);
+		randArray(newxy, 6);
 		for (i = 0; i < 4; i++)
 		{
 			for (j = 0; j < 4; j++)
 			{
 				if (data[i][j] == 0 )
 				{
-					for (int k = 0; k < 9; k++)
+					for (int k = 0; k < 5; k++)
 					{
 						if (i == newxy[k] && j == newxy[k + 1])
 						{
